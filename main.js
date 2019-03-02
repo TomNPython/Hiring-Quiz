@@ -11,6 +11,7 @@ const answerFour = document.getElementById('answer-four')
 const answerSheet = document.getElementById('answersheet')
 let answers = 0
 const score = document.getElementById('score')
+const message = document.getElementById('message')
 
 function oneAnswer() {
     questionOneContainer.style.opacity = '0'
@@ -49,6 +50,17 @@ questionFourContainer.addEventListener('click', fourAnswer, true)
 function correctAnswer() {
     answers++
     score.innerHTML = answers + ' / 4'
+    if (answers === 0) {
+        message.innerHTML = "Sorry, try again."
+    } else if (answers === 1) {
+        message.innerHTML = "It's a good start, but you can do better."
+    } else if (answers === 2) {
+        message.innerHTML = "Nearly there. Nice try!"
+    } else if (answers === 3) {
+        message.innerHTML = "So close."
+    } else {
+        message.innerHTML = "Congratulations. You've made some fine choices!"
+    }
 }
 
 answerOne.addEventListener('click', correctAnswer)

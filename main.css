@@ -1,6 +1,8 @@
 body {
     text-align: center;
     font-family: sans-serif;   
+    background-color: midnightblue;
+    color: white;
 }
 
 #question-one-container {
@@ -25,6 +27,36 @@ body {
     opacity: 0;
     transition: 1.8s;
     overflow: hidden
+}
+
+.question-container {
+    background-color: rgb(122, 101, 172);
+    border: 1px solid rgb(122, 101, 172);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.question-header {
+    border: 1px solid white;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(99, 81, 141);
+    padding: 10px;
+    border: 0px solid white;
+    border-radius: 10px;
+    transition: 0.8s
+}
+
+button:hover {
+    background-color: rgb(67, 55, 95)
 }
 
 #answersheet {
