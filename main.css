@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+    font-family: sans-serif;   
+}
+
+#question-one-container {
+    opacity: 1;
+    transition: 1.8s;
+    overflow: hidden
+}
+
+#question-two-container {
+    opacity: 0;
+    transition: 1.8s;
+    overflow: hidden
+}
+
+#question-three-container {
+    opacity: 0;
+    transition: 1.8s;
+    overflow: hidden
+}
+
+#question-four-container {
+    opacity: 0;
+    transition: 1.8s;
+    overflow: hidden
+}
+
+#answersheet {
+    opacity: 0;
+    transition: 1.8s;
+    overflow: hidden
+}
