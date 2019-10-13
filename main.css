@@ -37,6 +37,10 @@ body {
     padding: 10px;
 }
 
+.question-container:before {
+    display: none
+}
+
 .question-header {
     border: 1px solid white;
     border-radius: 10px;
